@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2020 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "nutymini.dtsi"
+
+&default_transform {
+	col-offset = <6>;
+};
+
+
+&kscan0 {
+
+  diode-direction = "row2col";
+  row-gpios
+    = <&gpio0 5 GPIO_ACTIVE_HIGH >     //Row0
+    , <&gpio0 6 GPIO_ACTIVE_HIGH >     //Row1
+    , <&gpio0 7 GPIO_ACTIVE_HIGH >    //Row2
+    , <&gpio0 8 GPIO_ACTIVE_HIGH >    //Row3
+    , <&gpio0 9 GPIO_ACTIVE_HIGH >    //Row3
+    ;
+	col-gpios
+		= <&gpio0 19  (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>	//Col0
+		, <&gpio0 18 (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>  //Col1
+		, <&gpio1 15 (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>  //Col2
+		, <&gpio1 14 (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>  //Col3
+		, <&gpio1 16 (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>  //Col4
+		, <&gpio1 10 (GPIO_ACTIVE_HIGH |GPIO_PULL_DOWN)>  //Col5
+		;
+};

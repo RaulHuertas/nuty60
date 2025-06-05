@@ -1,0 +1,15 @@
+file_format: "1"
+id: nuty60
+name: Nuty60
+type: shield
+url: https://github.com/RaulHuertas/nutymini-zmk/
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - studio
+  - display
+  - i2c
+siblings:
+  - nuty60_left
+  - nuty60_right
