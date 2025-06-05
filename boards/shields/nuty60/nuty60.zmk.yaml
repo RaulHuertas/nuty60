@@ -4,7 +4,6 @@ name: Nuty60
 type: shield
 url: https://github.com/RaulHuertas/nuty60/
 requires: [nice_nano_v2]
-exposes: [i2c_oled]
 features:
   - keys
   - studio
