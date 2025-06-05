@@ -1,4 +1,4 @@
-if SHIELD_NUTYMINI_LEFT
+if SHIELD_NUTY60_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
@@ -7,22 +7,18 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-
-
-
 endif
 
 
 
-
-if SHIELD_NUTYMINI_LEFT || SHIELD_NUTYMINI_RIGHT
+if SHIELD_NUTY60_LEFT || SHIELD_NUTY60_RIGHT
 
 config ZMK_SPLIT
     default y
 endif
 
 
-if SHIELD_NUTYMINI_DONGLE
+if SHIELD_NUTY60_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME

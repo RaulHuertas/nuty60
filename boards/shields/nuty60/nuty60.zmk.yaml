@@ -2,7 +2,7 @@ file_format: "1"
 id: nuty60
 name: Nuty60
 type: shield
-url: https://github.com/RaulHuertas/nutymini-zmk/
+url: https://github.com/RaulHuertas/nuty60/
 requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
