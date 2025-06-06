@@ -40,7 +40,7 @@
 &mo 3     &hm LEFT_ALT GRAVE  &hm LEFT_WIN EQUAL  &hm LEFT_SHIFT MINUS  &hm LCTRL NUHS  &kp F2          &kp LEFT        &kp DOWN      &kp UP        &kp RIGHT      &hm RIGHT_ALT F3  &none
 &kp NUBS  &kp F5              &kp F9              &kp F10               &kp F11         &kp F12         &kp N1          &kp N2        &kp N3        &kp N4         &kp N5            &to 2
 &kp TAB   &kp SPACE           &to 0               &kp C_STOP            &kp C_PLAY      &studio_unlock  &studio_unlock  &kp C_NEXT    &kp C_PREV    &kp DELETE     &kp ENTER         &kp K_CONTEXT_MENU
-&kp TAB   &kp SPACE           &mo 1               &to 3                 &kp C_MUTE      &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER         &kp ESC
+&kp TAB   &kp SPACE           &mo 1               &to 0                 &kp C_MUTE      &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER         &kp ESC
             >;
         };
 
@@ -50,7 +50,7 @@
 &none    &kp LEFT_ALT  &kp LEFT_WIN  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none           &none           &none         &none         &kp F11        &kp F12    &none
 &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4    &kp F1          &kp F2        &kp F3        &kp F4         &kp F5     &to 3
 &kp TAB  &kp SPACE     &to 0         &none           &none             &studio_unlock  &studio_unlock  &none         &none         &kp BACKSPACE  &kp ENTER  &kp ESC
-&kp TAB  &kp SPACE     &mo 1         &to 3           &kp C_MUTE        &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER  &kp ESC
+&kp TAB  &kp SPACE     &mo 1         &to 0           &kp C_MUTE        &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER  &kp ESC
             >;
         };
 
