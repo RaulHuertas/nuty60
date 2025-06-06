@@ -39,17 +39,17 @@
 &kp LEFT_SHIFT  &none           &none      &none  &none           &kp K_FORWARD     &none            &none         &kp UP_ARROW    &kp K_MENU    &kp F11     &none
 &kp LEFT_ALT    &none           &none      &none  &none           &kp C_PLAY_PAUSE  &none            &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp F12     &none
 &kp LCTRL       &none           &none      &none  &none           &kp C_STOP        &kp F1           &kp F2        &kp F3          &kp F4        &kp F5      &kp RIGHT_ALT
-&none           &none           &kp SPACE  &to 0  &studio_unlock  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_VOL_DN  &kp C_VOL_DN    &kp KP_ENTER  &kp ESCAPE  &none
+&none           &none           &kp SPACE  &to 0  &studio_unlock  &kp C_MUTE        &kp C_VOLUME_UP  &kp C_VOL_DN  &kp LEFT_GUI    &kp KP_ENTER  &kp ESCAPE  &none
             >;
         };
 
         layer_2 {
             bindings = <
-&none           &studio_unlock  &none  &none  &none  &none  &none  &none  &none         &none          &none      &none
-&kp LEFT_SHIFT  &none           &none  &none  &none  &none  &none  &none  &none         &none          &none      &none
-&kp LEFT_ALT    &none           &none  &none  &none  &none  &none  &none  &none         &none          &none      &none
-&kp LCTRL       &none           &none  &none  &none  &none  &none  &none  &none         &none          &none      &kp RIGHT_ALT
-&kp TAB         &kp SPACE       &mo 1  &to 0  &none  &none  &none  &none  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER  &kp ESC
+&none           &studio_unlock  &none      &none          &none       &caps_word  &none  &none           &none           &none            &none           &none
+&kp LEFT_SHIFT  &none           &kp DEL    &kp PAGE_UP    &kp INSERT  &none       &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &none
+&kp LEFT_ALT    &none           &kp HOME   &kp PAGE_DOWN  &kp END     &none       &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+&kp LCTRL       &none           &none      &none          &none       &none       &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none           &kp RIGHT_ALT
+&none           &none           &kp SPACE  &to 0          &none       &none       &none  &none           &kp LEFT_GUI    &kp KP_ENTER     &kp ESCAPE      &none
             >;
         };
 
