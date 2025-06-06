@@ -52,6 +52,8 @@
 
     chosen {
         zephyr,display = &oled_128x64;
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;
     };
 
 };
