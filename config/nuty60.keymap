@@ -23,7 +23,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_1 {
             bindings = <
 &kp TAB         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5            &kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0         &kp BACKSPACE
 &kp LEFT_SHIFT  &kp Q         &kp W         &kp E         &kp R          &kp T             &kp Y             &kp U              &kp I         &kp O         &kp P          &kp EQUAL
@@ -33,7 +33,7 @@
             >;
         };
 
-        layer_1 {
+        layer_2 {
             bindings = <
 &none           &studio_unlock  &none      &none  &none           &kp C_PREVIOUS    &kp F6           &kp F7        &kp F8          &kp F9        &kp F10     &kp DEL
 &kp LEFT_SHIFT  &none           &none      &none  &none           &kp K_FORWARD     &none            &none         &kp UP_ARROW    &kp K_MENU    &kp F11     &none
@@ -43,7 +43,7 @@
             >;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
 &none           &studio_unlock  &none      &none          &none       &caps_word  &none  &none           &none           &none            &none           &none
 &kp LEFT_SHIFT  &none           &kp DEL    &kp PAGE_UP    &kp INSERT  &none       &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &none
@@ -53,7 +53,7 @@
             >;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &none           &studio_unlock  &none  &none  &none  &none  &kp C_MUTE      &kp C_PP         &mkp LCLK          &mkp RCLK        &mkp MCLK       &none
 &kp LEFT_SHIFT  &none           &none  &none  &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP       &mmv MOVE_RIGHT  &msc SCRL_UP    &none
@@ -63,21 +63,11 @@
             >;
         };
 
-        layer_4 {
-            bindings = <
-&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
-            >;
-        };
-
         layer_5 {
             bindings = <
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
             >;
         };
@@ -96,13 +86,23 @@
             bindings = <
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
             >;
         };
 
-        layer_8 {
+        layer_9 {
             bindings = <
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
@@ -112,7 +112,7 @@
             >;
         };
 
-        layer_9 {
+        layer_10 {
             bindings = <
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
