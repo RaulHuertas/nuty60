@@ -9,6 +9,7 @@
 / {
 
     chosen {
+        zephyr,display = &oled;
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &physical_layout0;
     };
@@ -40,10 +41,8 @@
 	};
 
     &pro_micro_i2c {
-    //compatible = "nordic,nrf-twim"; // I2C controller instead of generic
     status = "okay";
 
-    /* Nodes using the bus go here */
     oled_128x64: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
