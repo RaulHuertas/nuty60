@@ -53,12 +53,11 @@
 
     };
 
-
-};
-
-/ {
     chosen {
         zephyr,display = &oled_128x64;
     };
+
 };
+
+
 
