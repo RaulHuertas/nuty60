@@ -39,7 +39,7 @@
 		>;
 	};
 
-    &xiao_i2c {
+    &pro_micro_i2c {
     //compatible = "nordic,nrf-twim"; // I2C controller instead of generic
     status = "okay";
 
