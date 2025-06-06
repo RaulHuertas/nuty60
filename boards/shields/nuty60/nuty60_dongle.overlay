@@ -2,7 +2,6 @@
 #include <physical_layouts.dtsi>
 #include "nuty60-layouts.dtsi"
 
-/delete-node/ &oled;
 
 &physical_layout0 {
     transform = <&default_transform>;
