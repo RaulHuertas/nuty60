@@ -36,11 +36,11 @@
 
         layer_1 {
             bindings = <
-&none     &kp PRINTSCREEN     &kp HOME            &kp END               &kp APOS        &kp RBKT        &kp N6          &kp N7        &kp N8        &kp N9         &kp N0            &none
-&mo 3     &hm LEFT_ALT GRAVE  &hm LEFT_WIN EQUAL  &hm LEFT_SHIFT MINUS  &hm LCTRL NUHS  &kp F2          &kp LEFT        &kp DOWN      &kp UP        &kp RIGHT      &hm RIGHT_ALT F3  &none
-&kp NUBS  &kp F5              &kp F9              &kp F10               &kp F11         &kp F12         &kp N1          &kp N2        &kp N3        &kp N4         &kp N5            &to 2
-&kp TAB   &kp SPACE           &to 0               &kp C_STOP            &kp C_PLAY      &studio_unlock  &studio_unlock  &kp C_NEXT    &kp C_PREV    &kp DELETE     &kp ENTER         &kp K_CONTEXT_MENU
-&kp TAB   &kp SPACE           &mo 1               &to 0                 &kp C_MUTE      &studio_unlock  &studio_unlock  &kp C_VOL_UP  &kp C_VOL_DN  &kp BACKSPACE  &kp ENTER         &kp ESC
+&none     &kp PRINTSCREEN     &kp HOME            &kp END               &kp APOS        &kp RBKT        &kp N6           &kp N7        &kp N8          &kp N9        &kp N0            &none
+&mo 3     &hm LEFT_ALT GRAVE  &hm LEFT_WIN EQUAL  &hm LEFT_SHIFT MINUS  &hm LCTRL NUHS  &kp F2          &none            &none         &kp UP_ARROW    &kp K_MENU    &hm RIGHT_ALT F3  &none
+&kp NUBS  &kp F5              &kp F9              &kp F10               &kp F11         &kp F12         &kp N1           &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp N5            &to 2
+&kp TAB   &kp SPACE           &to 0               &kp C_STOP            &kp C_PLAY      &studio_unlock  &studio_unlock   &kp C_NEXT    &kp C_PREV      &kp DELETE    &kp ENTER         &kp K_CONTEXT_MENU
+&kp TAB   &kp SPACE           &kp SPACE           &to 0                 &kp C_MUTE      &kp C_MUTE      &kp C_VOLUME_UP  &kp C_VOL_DN  &kp C_VOL_DN    &kp KP_ENTER  &kp ENTER         &kp ESC
             >;
         };
 
