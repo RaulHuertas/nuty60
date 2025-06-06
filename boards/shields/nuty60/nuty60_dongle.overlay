@@ -44,7 +44,7 @@
     status = "okay";
 
     /* Nodes using the bus go here */
-    oled_128x32: ssd1306@3c {
+    oled_128x64: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;
@@ -52,7 +52,7 @@
         segment-offset = <0>;
         page-offset = <0>;
         display-offset = <0>;
-        multiplex-ratio = <31>;
+        multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
         com-sequential;
