@@ -53,12 +53,12 @@
 
     };
 
-    / {
-        chosen {
-            zephyr,display = &oled_128x64;
-        };
-    };
 
 };
 
+/ {
+    chosen {
+        zephyr,display = &oled_128x64;
+    };
+};
 
