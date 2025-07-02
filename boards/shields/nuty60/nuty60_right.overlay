@@ -30,8 +30,10 @@
     , <&gpio1 15 GPIO_ACTIVE_HIGH >    //Row3
     ;
 
-  &left_encoder {
-      status = "okay";
-  };
 
 };
+
+&left_encoder {
+    status = "okay";
+};
+

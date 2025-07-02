@@ -24,12 +24,12 @@
     , <&gpio1 14 GPIO_ACTIVE_HIGH>    //Row3
     , <&gpio1 15 GPIO_ACTIVE_HIGH>    //Row4
     ;
-  &left_encoder {
-      status = "okay";
-  };
 
 };
 
+&left_encoder {
+    status = "okay";
+};
 
 
 
