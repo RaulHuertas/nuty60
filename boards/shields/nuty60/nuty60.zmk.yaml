@@ -3,13 +3,14 @@ id: nuty60
 name: Nuty60
 type: shield
 url: https://github.com/RaulHuertas/nuty60
-requires: [nice_nano_v2]
+requires: [seeed_xiao]
 exposes: [i2c_oled]
 features:
   - keys
   - studio
   - display
   - i2c
+  - rotary_encoder
 siblings:
   - nuty60_left
   - nuty60_right

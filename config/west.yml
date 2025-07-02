@@ -6,6 +6,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: caksoylar  # <-- new entry
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,6 +16,8 @@ manifest:
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
-
+    - name: zmk-rgbled-widget  # <-- new entry
+      remote: caksoylar
+      revision: main
   self:
     path: config
