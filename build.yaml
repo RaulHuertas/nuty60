@@ -21,16 +21,16 @@
 include:
   #HALVES
   - board: seeeduino_xiao_ble
-    shield: nuty60_left   
+    shield: nuty60_left rgbled_adapter   
     snippet: studio-rpc-usb-uart zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
   - board: seeeduino_xiao_ble
-    shield: nuty60_right 
+    shield: nuty60_right  rgbled_adapter
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     snippet: zmk-usb-logging
   #DONGLE
   - board: seeeduino_xiao_ble
-    shield: nuty60_dongle  dongle_display
+    shield: nuty60_dongle  dongle_display rgbled_adapter
     snippet: studio-rpc-usb-uart zmk-usb-logging  
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   #RESET SETTINGS
