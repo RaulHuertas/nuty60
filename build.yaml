@@ -21,7 +21,7 @@
 include:
   - board: seeeduino_xiao
     shield: nuty60_left   
-    snippet: studio-rpc-usb-uart zmk-usb-logging
+    snippet: studio-rpc-usb-uart 
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
   - board: seeeduino_xiao
     shield: nuty60_right 
@@ -29,7 +29,7 @@ include:
     snippet: zmk-usb-logging
   - board: seeeduino_xiao
     shield: nuty60_dongle  dongle_display
-    snippet: studio-rpc-usb-uart zmk-usb-logging  
+    snippet: studio-rpc-usb-uart   
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   - board: seeeduino_xiao
