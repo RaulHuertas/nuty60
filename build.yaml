@@ -5,13 +5,13 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-# board: [ "seeed_xiao" ]
+# board: [ "seeeduino_xiao" ]
 # shield: [ "corne_left", "corne_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: seeed_xiao
+#   - board: seeeduino_xiao
 #     shield: reviung41
-#   - board: seeed_xiao
+#   - board: seeeduino_xiao
 #     shield: corne_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -19,18 +19,18 @@
 #
 ---
 include:
-  - board: seeed_xiao
+  - board: seeeduino_xiao
     shield: nuty60_left   
     snippet: studio-rpc-usb-uart zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-  - board: seeed_xiao
+  - board: seeeduino_xiao
     shield: nuty60_right 
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     snippet: zmk-usb-logging
-  - board: seeed_xiao
+  - board: seeeduino_xiao
     shield: nuty60_dongle  dongle_display
     snippet: studio-rpc-usb-uart zmk-usb-logging  
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
-  - board: seeed_xiao
+  - board: seeeduino_xiao
     shield: settings_reset
