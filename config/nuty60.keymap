@@ -26,11 +26,11 @@
 
         layer_1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp NUMBER_1       &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5      &kp NUMBER_6  &kp N7               &kp N8             &kp N9           &kp N0                   &none
-&kp NON_US_BSLH   &kp Q              &kp W           &kp E             &kp R         &kp T       &kp Y         &kp U                &kp I              &kp O            &kp P                    &kp EQUAL
+&kp SINGLE_QUOTE  &kp NUMBER_1       &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5      &kp NUMBER_6  &kp N7               &kp N8             &kp N9           &kp N0                   &kp NON_US_BSLH
+&kp NON_US_HASH   &kp Q              &kp W           &kp E             &kp R         &kp T       &kp Y         &kp U                &kp I              &kp O            &kp P                    &kp EQUAL
 &mo 2             &hm LEFT_ALT A     &hm LEFT_WIN S  &hm LEFT_SHIFT D  &hm LCTRL F   &kp G       &kp H         &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_WIN L  &hm RIGHT_ALT SEMICOLON  &kp MINUS
 &mo 3             &kp Z              &kp X           &kp C             &kp V         &kp B       &kp N         &kp M                &kp COMMA          &kp PERIOD       &kp MINUS                &kp GRAVE
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB         &kp SPACE         &mo 1         &kp C_MUTE                                     &kp HOME           &kp BACKSPACE    &kp KP_ENTER             &kp ESC    &kp K_MENU  &kp PRINTSCREEN
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB         &kp SPACE         &mo 1         &kp C_MUTE                                     &kp HOME           &kp BACKSPACE    &kp KP_ENTER             &kp ESC          &kp K_CONTEXT_MENU  &kp PRINTSCREEN
             >;
         };
 
