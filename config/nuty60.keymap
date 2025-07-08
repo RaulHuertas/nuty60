@@ -26,32 +26,38 @@
 
         layer_1 {
             bindings = <
-&kp SINGLE_QUOTE  &kp NUMBER_1       &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5      &kp NUMBER_6  &kp N7               &kp N8             &kp N9           &kp N0                   &kp BACKSPACE
-&kp NON_US_BSLH   &kp Q              &kp W           &kp E             &kp R         &kp T       &kp Y         &kp U                &kp I              &kp O            &kp P                    &kp EQUAL
+&kp SINGLE_QUOTE  &kp NUMBER_1       &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4  &kp N5      &kp NUMBER_6  &kp N7               &kp N8             &kp N9           &kp N0                   &kp NON_US_BSLH
+&kp NON_US_HASH   &kp Q              &kp W           &kp E             &kp R         &kp T       &kp Y         &kp U                &kp I              &kp O            &kp P                    &kp EQUAL
 &mo 2             &hm LEFT_ALT A     &hm LEFT_WIN S  &hm LEFT_SHIFT D  &hm LCTRL F   &kp G       &kp H         &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_WIN L  &hm RIGHT_ALT SEMICOLON  &kp MINUS
-&none             &kp Z              &kp X           &kp C             &kp V         &kp B       &kp N         &kp M                &kp COMMA          &kp PERIOD       &kp MINUS                &kp GRAVE
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB         &kp SPACE         &mo 1         &kp C_MUTE                                     &kp HOME           &kp BACKSPACE    &kp KP_ENTER             &kp ESC        &none  &none
+&mo 3             &kp Z              &kp X           &kp C             &kp V         &kp B       &kp N         &kp M                &kp COMMA          &kp PERIOD       &kp SLASH                &kp GRAVE
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB         &kp SPACE         &mo 1         &kp C_MUTE                                     &kp C_STOP         &kp BACKSPACE    &kp KP_ENTER             &kp ESC          &kp K_CONTEXT_MENU  &kp PRINTSCREEN
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_2 {
             bindings = <
-&none  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4      &kp F6  &kp F7    &kp F8          &kp F9         &kp F10       &kp DEL
-&none  &kp CAPS        &kp HOME       &kp END        &kp C_PREVIOUS  &kp C_NEXT        &none   &none     &kp UP_ARROW    &kp K_MENU     &kp F11       &none
-&none  &bt BT_CLR_ALL  &none          &none          &studio_unlock  &kp C_PLAY_PAUSE  &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp F12       &none
-&none  &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4     &kp F1  &kp F2    &kp F3          &kp F4         &kp F5        &none
-&none  &none           &kp TAB        &kp SPACE      &to 0           &kp C_STOP                          &kp HOME        &kp BACKSPACE  &kp KP_ENTER  &kp ESCAPE  &none  &none
+&bt BT_CLR_ALL  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp F6          &kp F7          &kp F8        &kp F9      &kp F10       &to 4
+&bt BT_CLR      &none          &kp HOME       &kp END         &kp C_PREVIOUS  &kp C_NEXT        &none           &none           &none         &kp K_MENU  &kp F11       &none
+&none           &kp LEFT_ALT   &kp LEFT_WIN   &kp LEFT_SHIFT  &kp LCTRL       &kp C_PLAY_PAUSE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp F12       &none
+&none           &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4     &kp F1          &kp F2          &kp F3        &kp F4      &kp F5        &none
+&studio_unlock  &none          &kp TAB        &kp SPACE       &to 0           &kp C_MUTE                                        &kp C_STOP    &kp DELETE  &kp KP_ENTER  &kp ESCAPE  &none  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_3 {
             bindings = <
-&none           &studio_unlock  &none      &none          &none       &caps_word  &none  &none           &none           &none            &none           &none
-&kp LEFT_SHIFT  &none           &kp DEL    &kp PAGE_UP    &kp INSERT  &none       &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &none
-&kp LEFT_ALT    &none           &kp HOME   &kp PAGE_DOWN  &kp END     &none       &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
-&kp LCTRL       &none           &none      &none          &none       &none       &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none           &kp RIGHT_ALT
-&none           &none           &kp SPACE  &to 0          &none       &none                              &none           &none            &kp LEFT_GUI    &kp KP_ENTER   &kp ESCAPE  &none
+&none           &studio_unlock  &none     &none          &none       &caps_word  &none           &none             &none         &none            &none           &none
+&kp LEFT_SHIFT  &none           &kp DEL   &kp PAGE_UP    &kp INSERT  &none       &kp C_MUTE      &kp C_PLAY_PAUSE  &mkp LCLK     &mkp RCLK        &mkp MCLK       &none
+&kp LEFT_ALT    &none           &kp HOME  &kp PAGE_DOWN  &kp END     &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_UP    &none
+&kp LCTRL       &none           &none     &none          &none       &none       &caps_word      &msc SCRL_LEFT    &none         &msc SCRL_RIGHT  &msc SCRL_DOWN  &kp RIGHT_ALT
+&none           &none           &kp TAB   &kp SPACE      &to 0       &none                                         &none         &none            &kp LEFT_GUI    &kp KP_ENTER   &kp ESCAPE  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_4 {
@@ -60,8 +66,10 @@
 &kp LEFT_SHIFT  &none           &none  &none  &none  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP       &mmv MOVE_RIGHT  &msc SCRL_UP    &none
 &kp LEFT_ALT    &none           &none  &none  &none  &none  &kp CAPSLOCK    &studio_unlock   &msc SCRL_LEFT     &msc SCRL_RIGHT  &msc SCRL_DOWN  &none
 &kp LCTRL       &none           &none  &none  &none  &none  &studio_unlock  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp BACKSPACE    &kp ENTER       &kp ESC
-&none           &none           &none  &none  &none  &none                                   &none              &none            &none           &none    &none  &none
+&none           &none           &none  &none  &to 0  &none                                   &none              &none            &none           &none    &none  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_5 {
@@ -69,8 +77,10 @@
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &to 0
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_6 {
@@ -91,6 +101,8 @@
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none           &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_8 {
@@ -101,6 +113,8 @@
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_9 {
@@ -111,6 +125,8 @@
 &none  &none  &none  &none  &none  &none           &none           &none  &none           &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_10 {
@@ -121,8 +137,8 @@
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none           &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
-        };
 
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        };
     };
 };
