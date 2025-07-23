@@ -19,6 +19,11 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -32,8 +37,7 @@
 &mo 3             &kp Z              &kp X           &kp C             &kp V         &kp B       &kp N         &kp M                &kp COMMA          &kp PERIOD       &kp SLASH                &kp GRAVE
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TAB         &kp SPACE         &mo 1         &kp C_MUTE                                     &kp C_STOP         &kp BACKSPACE    &kp KP_ENTER             &kp ESC          &kp K_CONTEXT_MENU  &kp PRINTSCREEN
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_2 {
@@ -44,8 +48,7 @@
 &none           &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4     &kp F1          &kp F2          &kp F3        &kp F4      &kp F5        &none
 &studio_unlock  &none          &kp TAB        &kp SPACE       &to 0           &kp C_MUTE                                        &kp C_STOP    &kp DELETE  &kp KP_ENTER  &kp ESCAPE  &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_3 {
@@ -56,8 +59,7 @@
 &kp LCTRL       &none           &none     &none          &none       &none       &caps_word      &msc SCRL_LEFT    &none         &msc SCRL_RIGHT  &msc SCRL_DOWN  &kp RIGHT_ALT
 &none           &none           &kp TAB   &kp SPACE      &to 0       &none                                         &none         &none            &kp LEFT_GUI    &kp KP_ENTER   &kp ESCAPE  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_4 {
@@ -68,8 +70,7 @@
 &kp LCTRL       &none           &none  &none  &none  &none  &studio_unlock  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp BACKSPACE    &kp ENTER       &kp ESC
 &none           &none           &none  &none  &to 0  &none                                   &none              &none            &none           &none    &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_5 {
@@ -79,8 +80,7 @@
 &none  &none  &none  &none  &none  &none           &none           &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &to 0
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_6 {
@@ -101,8 +101,7 @@
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none           &none  &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_8 {
@@ -113,8 +112,7 @@
 &none  &none  &none  &none  &none  &studio_unlock  &studio_unlock  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+        sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_9 {
@@ -126,7 +124,7 @@
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
 
         layer_10 {
@@ -138,7 +136,7 @@
 &none  &none  &none  &none  &none  &studio_unlock                         &studio_unlock  &none  &none  &none  &none  &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_PREVIOUS C_NEXT>;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN &rot_kp C_PREVIOUS C_NEXT>;
         };
     };
 };
